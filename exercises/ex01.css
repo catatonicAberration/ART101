@@ -1,0 +1,33 @@
+UL {
+    color: magenta;
+}
+
+h1 {
+    color: rgb(230, 11, 113);
+}
+
+p {
+    color: magenta; background-color: black; margin-left: auto; margin-right: auto;
+}
+
+h2 {
+    color: cyan;
+}
+
+h3 {
+    color: cyan;
+}
+
+a {
+    color: orange;
+}
+
+html {
+    background: rgb(10, 0, 50);
+}
+
+IMG {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
