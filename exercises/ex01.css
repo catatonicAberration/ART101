@@ -3,11 +3,11 @@ UL {
 }
 
 h1 {
-    color: rgb(230, 11, 113);
+    color: #ff3a6f;
 }
 
 p {
-    color: magenta; background-color: black; margin-left: auto; margin-right: auto;
+    color: magenta; background-color: black; padding: 10%;
 }
 
 h2 {
@@ -30,4 +30,14 @@ IMG {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 90%;
 }
+
+#spider {
+    width:20%;
+    background-color: magenta;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.redtext{color:red;}
