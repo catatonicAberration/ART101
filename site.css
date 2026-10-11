@@ -25,15 +25,15 @@ p{
     padding: 2%;
 }
 #me{
-    width: 65%;
+    width: 30%;
 }
 li{
     color: #ff3aef;
     font-size: 20px;
 }
 .listimg{
-    width:50%;
+    width:20%;
 }
 .listimg:hover{
-    width:80%;
+    width:40%;
 }
