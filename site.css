@@ -4,7 +4,11 @@ html{
 h1{
     color: #ff3a6f;
     background-color: black;
-    padding: 30px;
+    padding: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
     border: 5px solid #ff3a6f;
     display: flex;
     justify-content: center;
@@ -22,7 +26,8 @@ p{
     color: #ff3aef;
     text-indent: 40px;
     background-color: #080213;
-    padding: 2%;
+    margin-right: 20%;
+    padding: 1%;
 }
 #me{
     width: 30%;
