@@ -42,3 +42,6 @@ li{
 .listimg:hover{
     width:40%;
 }
+a{
+    color:rgb(0, 255, 238);
+}
