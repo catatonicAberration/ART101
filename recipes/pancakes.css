@@ -1,0 +1,76 @@
+UL {
+    color: magenta;
+}
+
+h1 {
+    color: #ff3a6f;
+}
+
+p {
+    color: magenta; background-color: black; padding: 10%;
+}
+
+h2 {
+    color: cyan;
+}
+
+h3 {
+    color: cyan;
+}
+
+a {
+    color: orange;
+}
+
+html {
+    background: rgb(10, 0, 50);
+}
+
+IMG {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#spider {
+    width:20%;
+    background-color: magenta;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.redtext{color:red;}
+
+/* home page styles */
+
+#pan-home {
+    position:relative;
+    height: 100vh;
+}
+#chicken {
+    position: absolute;
+    bottom: 10px; 
+    left: 40%;
+
+}
+#chicken2{
+    position: absolute;
+    bottom: 50px; 
+    left: 10vw;
+}
+#chicken3 {
+    position: absolute;
+    bottom: 50px; 
+    right: 100px;
+
+}
+
+#homelink {
+    right: 50px;
+    top: 50px
+}
+
+#homelink img{
+    width: 100px;
+}
