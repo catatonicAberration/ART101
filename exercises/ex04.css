@@ -1,0 +1,16 @@
+#needy-button{
+    width: 300px;
+    height: 100px;
+    font-size: 20px;
+    background-color: black;
+    color: #ff3a6f;
+    border: solid #ff3a6f 5px;
+}
+
+h1{
+    color: #ff3a6f;
+}
+
+body{
+    background: #1d0042;
+}
