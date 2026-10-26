@@ -1,0 +1,171 @@
+body{
+    background-color: rgb(0, 0, 0);
+    background-image: url("../images/background.png");
+    background-size: 50%;
+}
+@keyframes hostanimation{
+    0%{
+        object-position: 0px 0px;
+    }
+    50%{
+        object-position: 0px 11px;
+    }
+    98%{
+        object-position: 0px -1px;
+    }
+    100%{
+        object-position: 0px 0px;
+    }
+}
+#host{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: block;
+    position: relative;
+    width: 50%;
+    animation-name: hostanimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+a {
+    color:white;
+    background-color: black;
+}
+H1{
+    color: white;
+    justify-content: center;
+    display: flex;
+    background-color: black;
+    border: white solid 5px;
+}
+.speechSmall{
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 1%;
+}
+.speechC{
+    justify-content: center;
+    padding: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.speechR{
+    justify-content:center;
+    padding: 1%;
+    margin-left: 30%;
+    margin-right: 10%;
+}
+.speechL{
+    justify-content: center;
+    padding: 1%;
+    margin-left: 10%;
+    margin-right: 30%;
+}
+.mlog p{
+    color: white;
+    justify-content: center;
+    display: flex;
+    text-indent: 40px;
+    font-size: large;
+}
+.mlog h2{
+    color: white;
+    justify-content: center;
+    display: flex;
+    text-indent: 40px;
+}
+#end{
+    font-size: 50px;
+    padding: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+span{
+    font-size: larger;
+    display: inline;
+}
+.mlog{
+    background-color: black;
+    border: white solid 5px;
+    padding: 2%;
+}
+.topzone{
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+}
+.mainzone {
+    display: flex;
+    gap: 5px;
+    align-items:flex-start;
+    padding: 30px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.582);
+    border: 5px white solid;
+    border-radius: 20px;
+}
+.hostplace{
+    padding: 50px;
+    flex: 2;
+    justify-content: center;
+    background-color: black;
+    border: 5px white solid;
+    padding: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.photoplace {
+    flex: 1;
+    display:flex;
+    justify-content: center;
+}
+.photoplace img {
+    height: 1050px;
+    background-color: black;
+    border: 5px white solid;
+    padding: 20px;
+}
+.hostplace #host{
+    width: 300px;
+}
+.hostplace .speechC{
+    justify-content: center;
+    padding: 1%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.buttonzone{
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+}
+#randbutton{
+    padding: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    border: white 5px double;
+    background-color: black;
+    color: white;
+}
+.link {
+    background: none;
+    border: none;
+    justify-content: center;
+    display:flex;
+}
+.mlog .indentless{
+    text-indent: 0;
+
+}
+.belowzone {
+    gap: 5px;
+    display: block;
+    align-items:flex-start;
+    padding: 30px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.582);
+    border: 5px white solid;
+    border-radius: 20px;
+}
