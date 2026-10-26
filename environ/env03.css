@@ -169,3 +169,21 @@ span{
     border: 5px white solid;
     border-radius: 20px;
 }
+.randmlog{
+    background-color: black;
+    border: white solid 5px;
+    padding: 2%;
+}
+.randmlog p{
+    color: white;
+    justify-content: center;
+    display: flex;
+    text-indent: 40px;
+    font-size: large;
+}
+.randmlog h2{
+    color: white;
+    justify-content: center;
+    display: flex;
+    text-indent: 40px;
+}

@@ -57,9 +57,9 @@ $("#randbutton").click(function(){
     $(".belowzone").css("background", place.background[index]);
     $(".belowzone").css("border", "solid " + place.color[index] + " 5px");
 
-    $(".mlog").html(place.description[index]);
-    $(".mlog").css("border", "double " + place.color[index] + " 5px");
-    $("h2").css("color", place.color[index]);
+    $(".randmlog").html(place.description[index]);
+    $(".randmlog").css("border", "double " + place.color[index] + " 5px");
+    $(".randmlog h2").css("color", place.color[index]);
 
     indexMem = index;
 
