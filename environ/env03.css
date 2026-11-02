@@ -137,7 +137,7 @@ span{
 }
 .buttonzone{
     justify-content: center;
-    display: flex;
+    display:grid;
     padding: 20px;
 }
 #randbutton{
@@ -173,17 +173,29 @@ span{
     background-color: black;
     border: white solid 5px;
     padding: 2%;
+    display: block;
 }
 .randmlog p{
     color: white;
     justify-content: center;
-    display: flex;
+    display: block;
     text-indent: 40px;
     font-size: large;
 }
 .randmlog h2{
     color: white;
     justify-content: center;
-    display: flex;
+    display: block;
     text-indent: 40px;
+}
+.randmlog strong {
+    color:white;
+}
+#choicebutton{
+    align-items: center;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: black;
+    border: white 5px double;
+    color: white;
 }
