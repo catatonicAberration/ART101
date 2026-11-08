@@ -1,9 +1,9 @@
 let place = {
     name: [
-        "ocean",
-        "fields",
-        "frost",
-        "city",
+        "Ocean",
+        "Fields",
+        "Frost",
+        "City",
     ],
     description: [
         "<h2> We find ourselves at a seaside baked in perpetual sunset. The vast coral <em>reef</em> extends out even beyond the tide's crashing waves. Branching polyp structures and crinoid stalks reach upwards into the orange sky. Beneath the waves, there is a vast world, teeming with life, and it extends down far deeper than you can ever possibly imagine.</h2>",
@@ -49,17 +49,18 @@ function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1) ) + min;
 };
 
-function findkey(key){
-    let length = place.keyword.length;
+function arrayCheck(key,array){
+    let length = array.length;
     let count = 0;
     while (count != length){
-        if (place.keyword[count] == key){
+        if (array[count] == key){
             return count;
         };
         count ++;
     };
     return -1;
 };
+
 
 $("#randbutton").click(function(){
     
@@ -92,7 +93,7 @@ $("#randbutton").click(function(){
 $("#choicebutton").click(function(){
     let userKey = prompt("Enter keyword.");
 
-    let index = findkey(userKey);
+    let index = arrayCheck(userKey,place.keyword);
 
     if (index != -1){
         $("#randbutton").css("border", "double " + place.color[index] + " 5px");
@@ -151,3 +152,65 @@ $("#choicebutton").click(function(){
 
 });
 
+$(".color-circle").click(function(){
+
+    console.log(this.id);
+
+    let index = arrayCheck(this.id,place.name);
+
+    if (index != -1){
+        $("#randbutton").css("border", "double " + place.color[index] + " 5px");
+        $("#randbutton").css("color", place.color[index]);
+        $("#choicebutton").css("border", "double " + place.color[index] + " 5px");
+        $("#choicebutton").css("color", place.color[index]);
+
+        $(".belowzone").css("background rgba(0, 0, 0, 0.582)");
+        $(".belowzone").css("border", "solid " + place.color[index] + " 5px");
+
+        $(".randmlog").html(place.description[index]);
+        $(".randmlog").css("border", "double " + place.color[index] + " 5px");
+        $(".randmlog h2").css("color", place.color[index]);
+
+        $("body").css("background-image", "url("+ place.backgroundimg[index] +")")
+
+        $("h1").css("border", "solid " + place.color[index] + " 5px");
+        $("h1").css("color", place.color[index]);
+        $(".mlog").css("border", "solid " + place.color[index] + " 5px");
+        $(".hostplace").css("border", "solid " + place.color[index] + " 5px");
+        $(".photoplace img").css("border", "solid " + place.color[index] + " 5px");
+        $(".mlog h2").css("color", place.color[index]);
+        $(".mlog p").css("color", place.color[index]);
+        $(".mainzone").css("background", place.background[index]);
+        $(".mainzone").css("border", "solid " + place.color[index] + " 5px");
+
+        $("a").css("color", place.color[index]);
+    }
+    else{
+        $("#randbutton").css("border", "double white 5px");
+        $("#randbutton").css("color", "white");
+        $("#choicebutton").css("border", "double white 5px");
+        $("#choicebutton").css("color", "white");
+
+        $(".belowzone").css("background", " rgba(0, 0, 0, 0.582)");
+        $(".belowzone").css("border", "solid white 5px");
+
+        $(".randmlog").html("<h2>Let's see where fate takes us.</h2>");
+        $(".randmlog").css("border", "double white 5px");
+        $(".randmlog h2").css("color", "white");
+
+        $("body").css("background-image", "url(../images/background.png)")
+
+        $("h1").css("border", "solid white 5px");
+        $("h1").css("color", "white");
+        $(".mlog").css("border", "solid white 5px");
+        $(".hostplace").css("border", "solid white 5px");
+        $(".photoplace img").css("border", "solid white 5px");
+        $(".mlog h2").css("color", "white");
+        $(".mlog p").css("color", "white");
+        $(".mainzone").css("background rgba(0, 0, 0, 0.582)");
+        $(".mainzone").css("border", "solid white 5px");
+
+        $("a").css("color", "white");
+    }
+
+});

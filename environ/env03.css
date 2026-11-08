@@ -199,3 +199,23 @@ span{
     border: white 5px double;
     color: white;
 }
+
+.selectzone{
+    display: flex;
+    justify-content: center;
+}
+
+.color-circle {
+   display: flex;
+   width: 36px;
+   height: 36px;
+   margin-right: 8px;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+#null {background-color: white;}
+#Ocean  { background-color: coral; }
+#Fields { background-color: crimson; }
+#Frost   { background-color: lightsteelblue; }
+#City  { background-color: mediumspringgreen; }
