@@ -45,6 +45,9 @@ let lstMin=0;
 
 let indexMem = -1;
 
+$(".color-circle").hide();
+
+
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1) ) + min;
 };
@@ -86,6 +89,8 @@ $("#randbutton").click(function(){
     $(".randmlog").css("border", "double " + place.color[index] + " 5px");
     $(".randmlog h2").css("color", place.color[index]);
 
+    $("#null").show();
+
     indexMem = index;
 
 });
@@ -121,6 +126,8 @@ $("#choicebutton").click(function(){
         $(".mainzone").css("border", "solid " + place.color[index] + " 5px");
 
         $("a").css("color", place.color[index]);
+
+        $("#" + place.name[index]).show();
     }
     else{
         $("#randbutton").css("border", "double white 5px");
@@ -214,3 +221,29 @@ $(".color-circle").click(function(){
     }
 
 });
+
+$(".color-circle").hover(
+    function () {
+    $(this).css("transform", "scale(2)");
+    },
+    function () {
+    $(this).css("transform", "scale(1)");
+    }
+);
+
+$("#randbutton").hover(
+    function () {
+    $(this).css("transform", "scale(1.1)");
+    },
+    function () {
+    $(this).css("transform", "scale(1)");
+    }
+);
+$("#choicebutton").hover(
+    function () {
+    $(this).css("transform", "scale(1.1)");
+    },
+    function () {
+    $(this).css("transform", "scale(1)");
+    }
+);
